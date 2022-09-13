@@ -1,0 +1,19 @@
+{
+  "name": "Parcel-BoostrapStudio-Sample",
+  "version": "1.0",
+  "description": "Sample Configuration to post process Bootstrap Studio export site with Parcel",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "watch": "parcel watch bss-export/*.html bss-export/**/*.html",
+    "serve": "parcel bss-export/*.html bss-export/**/*.html",
+    "build": "parcel build bss-export/index.html bss-export/*.html bss-export/**/*.html --dist-dir parcel-output"
+  },
+  "author": "vasfvitor",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.7.0",
+    "@parcel/compressor-gzip": "^2.7.0",
+    "@parcel/config-default": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
